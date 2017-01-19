@@ -11,18 +11,16 @@ This plugin replies on the following tools:
 
 ###How to
 To start using the pluging include the js file after you setup Bootstrap as shown in the following:
-```
+```html
 <script type="text/javascript" src="js/bootstrap-alert-quick.js"></script>
 ```
 Then add a container, it might be like that:
-```
+```html
 <div class="bootstrap-alert-placeholder"></div>
 ```
 Later add a an alert as follows:
-```
-<script type="text/javascript">
-$(".bootstrap-alert-placeholder").bootstrapAlert({content: "Bravo! your alert is simply added"});
-</script>
+```javascript
+    $(".bootstrap-alert-placeholder").bootstrapAlert({content: "Bravo! your alert is simply added"});
 ```
 ###Options
 Like any other jQuery plugin, this plugin ex extendable with options. The options are:
@@ -33,4 +31,9 @@ Like any other jQuery plugin, this plugin ex extendable with options. The option
   * __danger__ to show a red alert message
   * __info__ to show an info blue message
 * __showIcon__(_bool_): true or false to whether show an icon on the left of the message
-* 
+* __icon__(_string_): this is a fontawesome icon class without **fa fa-**. ex: exclamation, exclamation-circle
+* __showCloseButton__(_bool_): true or false to whether show the close button
+
+###The End
+This is it for now. I will regularly update the plugin for more features if I need them.
+Please feel free to fork the plugin and create merge requests if you updated it.
