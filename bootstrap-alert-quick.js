@@ -25,7 +25,7 @@
 
                 $closeButton.addClass("close close-sm")
                     .attr("type", "button")
-                    .data("dismiss", "alert");
+                    .attr("data-dismiss", "alert");
 
                 $btnIcon = $("<i></i>")
                         .addClass("fa fa-times");
